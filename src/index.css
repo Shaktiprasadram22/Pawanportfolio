@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #D4A373;
+  --primary-light: #E9C46A;
+  --secondary: #CCD5AE;
+  --background: #FAF8F1;
+  --text: #333333;
+  --text-light: #666666;
+  --card-bg: #FFFFFF;
+}
+
+.dark {
+  --primary: #E9A23B;
+  --primary-light: #F1C75B;
+  --secondary: #8A9A5B;
+  --background: #1A1A1A;
+  --text: #F5F5F5;
+  --text-light: #BBBBBB;
+  --card-bg: #2A2A2A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+.section-title {
+  @apply text-2xl font-semibold text-center mb-8 relative inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 3px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg transition-all duration-200 font-medium;
+}
+
+.btn-primary {
+  @apply bg-[color:var(--primary)] text-white hover:bg-[color:var(--primary-light)];
+}
+
+.btn-outline {
+  @apply border border-[color:var(--primary)] text-[color:var(--primary)] hover:bg-[color:var(--primary)] hover:text-white;
+}
+
+.badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium bg-opacity-20 inline-block mr-2 mb-2;
+}
+
+input, textarea {
+  @apply bg-transparent border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--primary)] focus:border-transparent transition-all duration-200;
+}
