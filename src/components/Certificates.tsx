@@ -12,6 +12,8 @@ const certificates = [
     organization: "NPTEL",
     date: "Nov 2024",
     image: nptelCert,
+    verifyLink:
+      "https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs118/Course/NPTEL24CS118S167020188104431886.pdf",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const certificates = [
     organization: "Coursera",
     date: "Jan 2024",
     image: ibmCert,
+    verifyLink: "https://coursera.org/verify/profession%20al-cert/J2SUTUGXLG5M",
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ const certificates = [
     organization: "Great Learning",
     date: "Aug 2024",
     image: sqlCert,
+    verifyLink: "", // You will add the link here later
   },
 ];
 
@@ -81,6 +85,29 @@ const Certificates: React.FC = () => {
                   <span>{certificate.organization}</span>
                   <span>{certificate.date}</span>
                 </div>
+
+                {/* Verify Certificate Button */}
+                {certificate.verifyLink && (
+                  <a
+                    href={certificate.verifyLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors"
+                    aria-label="Verify Certificate"
+                  >
+                    Verify Certificate
+                  </a>
+                )}
+                {/* For 3rd certificate without a link */}
+                {!certificate.verifyLink && certificate.id === 3 && (
+                  <a
+                    href="#"
+                    className="mt-3 inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition-colors"
+                    aria-label="Verify Certificate"
+                  >
+                    Verify Certificate
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
