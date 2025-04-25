@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
               Contact Me
             </a>
             <a
-              href="/src/assets/resume.pdf"
+              href="https://drive.google.com/file/d/13dip7fKCBT84DyQiBysI8SeS_tijN-Ia/view?usp=drive_link"
               target="_blank"
               className="btn btn-outline flex items-center gap-2"
               rel="noopener noreferrer"
@@ -42,6 +42,7 @@ const Hero: React.FC = () => {
               <FileText size={18} />
               Download Resume
             </a>
+
             <a href="#projects" className="btn btn-outline">
               View Projects
             </a>
