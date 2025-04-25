@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
               {/* HackerRank Emoji or Image */}
               <span className="text-5xl mb-4">🏆</span>
               <h4 className="font-semibold text-lg mb-2">
-                Top 5 in LPU hackathon
+                Top 5 in LPU "Web e thon" hackathon
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Led a team to be in top 5 in LPU hackathon, building an
