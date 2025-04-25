@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-            <span className="block">Hi, I'm</span>
+            <span className="block">I'm</span>
             <span className="text-primary block">Pavan Simha Reddy</span>
           </h1>
           <h2 className="text-xl sm:text-2xl font-medium text-gray-600 dark:text-gray-300 mb-8">
