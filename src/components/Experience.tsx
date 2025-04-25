@@ -48,11 +48,11 @@ const Experience: React.FC = () => {
               {/* HackerRank Emoji or Image */}
               <span className="text-5xl mb-4">🏆</span>
               <h4 className="font-semibold text-lg mb-2">
-                Top 10 in national-level hackathon
+                Top 10 in LPU hackathon
               </h4>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                instead that add "led a team to be in top 10 in national-level
-                hackathon, building an innovative app for smart homes.
+                instead that add "led a team to be in top 10 in LPU hackathon,
+                building an innovative app for smart homes.
               </p>
               <button
                 onClick={() => toggleDescription(1)}
